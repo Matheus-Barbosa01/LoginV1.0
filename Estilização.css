@@ -1,0 +1,230 @@
+/* tudo sobre a parte do E-mail*/
+.conta{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: #000000;
+    font-weight: 600;
+}
+
+.conta .text1{
+    font-size: 15px;
+    padding-left: 10px;
+    position: absolute;
+    top: 13px;
+    transition: 0.6s;
+    pointer-events: none;
+}
+.email{
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: #e7dddc;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.email:focus{
+    border: 2px solid transparent;
+    color: #000000;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0,0,0,1), inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.conta .email:valid ~ .text1, 
+.conta .email:focus ~ .text1{
+    transition: 0.3s;
+    padding-left: 2px;
+   transform: translateY(-35px);
+}
+
+.conta .email:valid,
+.conta .email:focus{
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px rgba(0,0,0,1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+/* Tudo sobre a parte da Senha */
+
+.password{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color:#000000;
+    font-weight: 600;
+}
+
+.password .text2{
+    font-size: 15px;
+    padding-left: 10px;
+    position:absolute;
+    top: 13px;
+    transition: 0.6s;
+    pointer-events: none;
+}
+.senha{
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.senha:focus{/* criar uma concavidade para dentro do input senha*/
+    border: 2px solid transparent;
+    color: #000000;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0,0,0,1), inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.password .senha:valid ~ .text2,/*move a palavra Password para cima */
+.password .senha:focus ~ .text2{
+    transition: 0.3s;
+    padding-left: 2px;
+   transform: translateY(-35px);
+}
+
+.password .senha:valid,
+.password .senha:focus{
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px rgba(0,0,0,1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+/*Tudo Realcioando ao botão*/
+button{
+    font-family: "montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    border-radius: 6px;
+    position: relative;
+    background: rgb(27, 182, 138);
+    box-shadow: 3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 0px 0px 6px rgba(19, 251, 235, 0.4);
+    border: none;
+}
+
+button::after{
+    position:absolute;
+    content: "";
+    background: #000000;
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+button:hover::after{
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 20px;
+    color: #050505;
+    font-weight: 900;
+    letter-spacing: 0.4em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+
+}
+
+button:hover span{
+    color: #13a0a5;
+    animation: scaleUp 0.2s ease-in-out;
+}
+@keyframes scaleUp{
+    0%{
+        trnsform: scale(1);
+    }
+    50%{
+        transform: scale(0.90);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*parte do fomulario de login*/
+.form{
+    background-color: rgb(27, 182, 138);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(19, 251, 235, 0.4), 0px 0px 25px 10px rgba(19, 251, 235, 0.4),inset 0px 0px 20px 10px rgba(9, 211, 198, 0.4);
+}
+/*aliamentos e ajustes na tela */
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: rgb(19, 61, 63);
+    background-image: url(Plano_de_Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-weight: 800;
+    background: rgb(27, 182, 138);
+    padding: 5px 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,1), inset 0px 0px 10px 5px rgb(38, 141, 122);
+    font-family:verdana;
+}
+
+.linkSenha{
+    padding-right: 2.5rem;
+    margin-top: 3px;
+    margin-right: 1.8rem;
+    font-size: 14px;
+}
+.criarc{
+    font-size: 20px;
+}
+.imagens{
+    letter-spacing: 10px;
+}
+.logo{
+    width: 20px;
+}
+.planoFundo{
+    background-image: 20px;
+}
+.img{
+    position:absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: url(olho_Aberto.svg);
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.img.olhoFechado{
+    background: url(olho_Fechado.svg);
+    background-size: cover;
+}
