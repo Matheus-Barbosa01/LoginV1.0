@@ -1,3 +1,4 @@
+// realizar a troca de imagens da senha de acordo com o type do input senha
 const password = document.querySelector('.senha');
 const img = document.querySelector('.img')
 

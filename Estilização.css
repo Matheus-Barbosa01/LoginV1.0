@@ -23,7 +23,7 @@
     outline: none;
     padding: 0px 7px;
     border-radius: 6px;
-    color: #e7dddc;
+    color: #000000;
     font-weight: 600;
     font-size: 15px;
     background-color: transparent;
@@ -42,13 +42,6 @@
    transform: translateY(-35px);
 }
 
-.conta .email:valid,
-.conta .email:focus{
-    box-shadow: 3px 3px 10px rgba(0,0,0,1),
-    -1px -1px 6px rgba(255, 255, 255, 0.4),
-    inset 3px 3px 10px rgba(0,0,0,1),
-    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
-}
 /* Tudo sobre a parte da Senha */
 
 .password{
@@ -76,7 +69,7 @@
     padding: 0px 7px;
     border-radius: 6px;
     font-size: 15px;
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     box-shadow: 3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
@@ -92,14 +85,7 @@
    transform: translateY(-35px);
 }
 
-.password .senha:valid,
-.password .senha:focus{
-    box-shadow: 3px 3px 10px rgba(0,0,0,1),
-    -1px -1px 6px rgba(255, 255, 255, 0.4),
-    inset 3px 3px 10px rgba(0,0,0,1),
-    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
-}
-/*Tudo Realcioando ao botão*/
+/*Tudo Realcioando ao botão Entrar*/
 button{
     font-family: "montserrat", sans-serif;
     display: flex;
@@ -144,10 +130,10 @@ button span{
     transition: all 0.3s ease-in-out;
 
 }
-
+/*animação do nome do butão entrar*/
 button:hover span{
     color: #13a0a5;
-    animation: scaleUp 0.2s ease-in-out;
+    animation: scaleUp 0.3s ease-in-out;
 }
 @keyframes scaleUp{
     0%{
@@ -191,28 +177,28 @@ h1{
     background: rgb(27, 182, 138);
     padding: 5px 30px;
     border-radius: 8px;
-    box-shadow: 5px 5px 20px 0px rgba(0,0,0,1), inset 0px 0px 10px 5px rgb(38, 141, 122);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,1), inset 0px 0px 10px 3px rgb(38, 141, 122);
     font-family:verdana;
 }
-
+/* <P> esquece minha senha</P>*/
 .linkSenha{
     padding-right: 2.5rem;
     margin-top: 3px;
     margin-right: 1.8rem;
     font-size: 14px;
 }
+/*<P> criar conta </P>*/
 .criarc{
     font-size: 20px;
 }
+/* tudo sobre as logos */
 .imagens{
     letter-spacing: 10px;
 }
 .logo{
     width: 20px;
 }
-.planoFundo{
-    background-image: 20px;
-}
+/* ícones da senha */ 
 .img{
     position:absolute;
     top: 50%;
