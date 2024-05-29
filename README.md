@@ -7,10 +7,10 @@ https://github.com/Matheus-Barbosa01/LoginV1.0/assets/157723585/98153ea5-6645-46
 
 <p>veja o codigo logo abaixo </p>
 <div>
-<h3>Tudo sobre o HTML</h3>
+<h3>Código HTML</h3>
 <img src="imagens dos codigos/HTML.png" alt="">
-<h3>Tudo sobre CSS</h3>
+<h3>Código CSS</h3>
 <img src="imagens dos codigos/CSScompleto.png" alt="">
-<h3>Tudo sobre o JavaScript</h3>
+<h3>Código JavaScript</h3>
 <img src="imagens dos codigos/JAVASCRIPT.png" alt="">
 </div>
